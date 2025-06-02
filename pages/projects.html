@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> GREEN BUSINESS CLUB SLOTERDIJK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../style/projects.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../script/projects.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar" style="padding-left:32px; padding-right:32px;">
+    <a href="main.html" class="w3-bar-item w3-button w3-wide">
+      <img src="../img/logo.jpg" alt="Logo" style="height: 40px; width: auto; margin-right: 10px;">
+    </a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="members.html" class="w3-bar-item w3-button">MEMBERS</a>
+      <a href="projects.html" class="w3-bar-item w3-button">PROJECTS</a>
+      <a href="events.html" class="w3-bar-item w3-button"> EVENTS</a>
+      <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="members.html" class="w3-bar-item w3-button">MEMBERS</a>
+    <a href="projects.html" class="w3-bar-item w3-button">PROJECTS</a>
+    <a href="events.html" class="w3-bar-item w3-button"> EVENTS</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>>
+  </nav>
+
+<!-- Projects -->
+<div class="w3-container" style="padding: 128px 16px" id="projects">
+  <h1 class="w3-center bold-heading">PROJECTS</h1>
+  <p class="w3-center" style="font-size: 24px; max-width: 800px; margin: auto;">
+    What we've done for Sloterdijk – A collection of completed, ongoing, and upcoming projects 
+    aimed at creating a more sustainable, energy-efficient, and livable urban environment.
+  </p>
+  
+
+
+  <style>
+    .project-card {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .project-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .project-card .w3-container {
+      flex-grow: 1;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .bold-heading {
+    font-weight: bold;
+    }
+
+    .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 24px; /* Optional: spacing between cards */
+    }
+    .project-card {
+    width: 280px; /* Or adjust to your preferred fixed size */
+    }
+    .project-card img {
+    height: 200px;
+    object-fit: cover;
+    }
+
+  </style>
+  
+
+  <!-- Completed Projects Section -->
+<div class="w3-row-padding" style="margin-top: 64px">
+  <h2 class="w3-center bold-heading">Completed Projects</h2>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/climate.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2023 Climate Adaptation">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2023 Climate Adaptation Tool:</strong> Enhancing climate resilience in the Sloterdijk area through innovative adaptation strategies.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/energy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2024 Energy Saving">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2024 Energy Saving:</strong> Implementing energy-saving technologies to reduce consumption and carbon footprint.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/lights.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2024 Turns off the Lights">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2024 Turns off the Lights:</strong> Smart lighting solutions for better energy efficiency in urban spaces.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/green1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2024 Green Oasis 1">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2024 Green Oasis 1:</strong> Transforming urban spaces into green, sustainable, and accessible environments.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ongoing Projects Section -->
+<div class="w3-row-padding card-row" style="margin-top: 64px">
+  <h2 class="w3-center bold-heading">Ongoing Projects</h2>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/green2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2024 Green Oasis 2">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2024 Green Oasis 2:</strong> Expanding green oases with eco-friendly features for a cleaner and healthier environment.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/waste.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2025 Waste Scan">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2025 Waste Scan:</strong> Implementing technology to monitor and manage waste more effectively in urban areas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Upcoming Projects Section -->
+<div class="w3-row-padding card-row" style="margin-top: 64px">
+  <h2 class="w3-center bold-heading">Upcoming Projects</h2>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/AZ.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2025 From A to Z">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2025 From A to Z:</strong> A comprehensive approach to urban sustainability, integrating all elements from A to Z.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card project-card">
+      <img src="../img/logistics.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2023 Climate Adaptation">
+      <div class="w3-container">
+        <p class="w3-left"><strong>2025 Smartening logistics movements (pilot project):</strong> Offers entrepreneurs the opportunity to contribute to a more sustainable area by optimising logistical flows via a central hub.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Annual Report Section -->
+ <div class="w3-container w3-light-grey w3-padding-64" style="margin-top: 64px;">
+  <div class="w3-row-padding">
+    <!-- Left column for the report description and download button -->
+    <div class="w3-col m6">
+      <h3>Annual Report 23/24</h3>
+      <p>This is the summary of our efforts, milestones, and achievements for the year 2023-2024 at GBC Sloterdijk. Dive into our progress across various sustainability initiatives.</p>
+      <a href="../report.pdf" class="w3-button w3-black"><i class="fa fa-download"></i> Download Full Report</a>
+    </div>
+
+    <!-- Right column for statistics -->
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-users w3-margin-right"></i>Partners Engaged</p>
+      <div class="w3-grey w3-round-xlarge">
+        <div class="w3-container w3-dark-grey w3-center w3-round-xlarge" style="width:95%">95%</div>
+      </div>
+
+      <p class="w3-wide"><i class="fa fa-cogs w3-margin-right"></i>Active Projects</p>
+      <div class="w3-grey w3-round-xlarge">
+        <div class="w3-container w3-dark-grey w3-center w3-round-xlarge" style="width:80%">80%</div>
+      </div>
+
+      <p class="w3-wide"><i class="fa fa-book w3-margin-right"></i>Knowledge Shared</p>
+      <div class="w3-grey w3-round-xlarge">
+        <div class="w3-container w3-dark-grey w3-center w3-round-xlarge" style="width:88%">88%</div>
+      </div>
+
+      <p class="w3-wide"><i class="fa fa-calendar w3-margin-right"></i>Events Held</p>
+      <div class="w3-grey w3-round-xlarge">
+        <div class="w3-container w3-dark-grey w3-center w3-round-xlarge" style="width:92%">92%</div>
+      </div>
+
+      <p class="w3-wide"><i class="fa fa-smile-o w3-margin-right"></i>Member Satisfaction</p>
+      <div class="w3-grey w3-round-xlarge">
+        <div class="w3-container w3-dark-grey w3-center w3-round-xlarge" style="width:85%">85%</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-black w3-padding-24 w3-opacity-min" style="font-size: 14px; line-height: 1.4;">
+  <div class="w3-container w3-content" style="max-width: 900px;">
+
+    <!-- Navigation Links -->
+    <div class="w3-row" style="margin-bottom: 20px; font-size: 13px;">
+
+      <div class="w3-third" style="text-align: left;">
+        <strong style="display: block; margin-bottom: 8px; color: #ccc;">Explore</strong>
+        <a href="../pages/members.html" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px; margin-right: 6px;">Members</a>
+        <a href="../pages/projects.html" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px; margin-right: 6px;">Projects</a>
+        <a href="../pages/events.html" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px;">Events</a>
+      </div>
+
+      <div class="w3-third" style="text-align: center; border-left: 1px solid #444; border-right: 1px solid #444; padding: 0 15px;">
+        <strong style="display: block; margin-bottom: 8px; color: #ccc;">Follow Us</strong>
+        <a href="https://www.linkedin.com/company/green-business-club-amsterdam-sloterdijken" target="_blank" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px;">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+      
+
+      <div class="w3-third" style="text-align: right;">
+        <a href="#top" class="w3-button w3-light-grey w3-small" style="padding:6px 10px;">
+          <i class="fa fa-arrow-up w3-margin-right"></i>Top
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="w3-small" style="color: #aaa; margin-top: 0; border-top: 1px solid #444; padding-top: 12px;">
+      © 2025 Green Business Club Sloterdijk. All rights reserved.
+    </p>
+
+  </div>
+</footer>

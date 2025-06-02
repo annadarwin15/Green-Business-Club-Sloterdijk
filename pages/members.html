@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> GREEN BUSINESS CLUB SLOTERDIJK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+=<link rel="stylesheet" href="../style/members.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../script/members.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar" style="padding-left:32px; padding-right:32px;">
+    <a href="main.html" class="w3-bar-item w3-button w3-wide">
+      <img src="../img/logo.jpg" alt="Logo" style="height: 40px; width: auto; margin-right: 10px;">
+    </a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="members.html" class="w3-bar-item w3-button">MEMBERS</a>
+      <a href="projects.html" class="w3-bar-item w3-button">PROJECTS</a>
+      <a href="events.html" class="w3-bar-item w3-button"> EVENTS</a>
+      <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="members.html" class="w3-bar-item w3-button">MEMBERS</a>
+    <a href="projects.html" class="w3-bar-item w3-button">PROJECTS</a>
+    <a href="events.html" class="w3-bar-item w3-button"> EVENTS</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+
+  <!-- Members -->
+<div class="w3-container" style="padding:128px 16px" id="members">
+  <h3 class="w3-center">MEMBERS</h3>
+  <p class="w3-center w3-large">The Changemakers</p>
+
+  <!-- Swiper container -->
+  <div class="swiper mySwiper" style="margin-top:64px">
+    <div class="swiper-wrapper">
+
+      <!-- Alliander-->
+      <div class="swiper-slide">
+        <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+          <img src="../img/alliander.jpg" alt="Alliander" style="height: 150px; object-fit: contain; margin-top: 30px;">
+          <div class="w3-container" style="text-align: center;">
+            <h3>Alliander</h3>
+            <p class="w3-opacity">Energy Network Company</p>
+            <p>Manages electricity and gas networks in the Netherlands, enabling the energy transition with smart infrastructure.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- APG Morgen -->
+    <div class="swiper-slide">
+      <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+        <img src="../img/apg.png" alt="APG Morgen" style="height: 150px; object-fit: contain; margin-top: 30px;">
+        <div class="w3-container" style="text-align: center;">
+          <h3>APG Morgen</h3>
+          <p class="w3-opacity">Pension Investment Group</p>
+          <p>Focuses on sustainable investments for future generations and urban resilience.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arup -->
+    <div class="swiper-slide">
+      <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+        <img src="../img/arup.png" alt="Arup" style="height: 150px; object-fit: contain; margin-top: 30px;">
+        <div class="w3-container" style="text-align: center;">
+          <h3>Arup</h3>
+          <p class="w3-opacity">Design & Engineering</p>
+          <p>Global firm delivering sustainable architecture and infrastructure for smart cities.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Athora -->
+    <div class="swiper-slide">
+      <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+        <img src="../img/athora.png" alt="Athora" style="height: 150px; object-fit: contain; margin-top: 30px;">
+        <div class="w3-container" style="text-align: center;">
+          <h3>Athora</h3>
+          <p class="w3-opacity">Insurance & Retirement</p>
+          <p>Provides sustainable life insurance and pension solutions with a long-term focus.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breikers -->
+    <div class="swiper-slide">
+      <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+        <img src="../img/breikers.png" alt="Breikers" style="height: 150px; object-fit: contain; margin-top: 30px;">
+        <div class="w3-container" style="text-align: center;">
+          <h3>Breikers</h3>
+          <p class="w3-opacity">Mobility Consultants</p>
+          <p>Helps organizations make mobility more sustainable, flexible, and future-proof.</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- CityHub -->
+      <div class="swiper-slide">
+        <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+          <img src="../img/cityhub.jpg" alt="CityHub" style="height: 150px; object-fit: contain; margin-top: 30px;">
+          <div class="w3-container" style="text-align: center;">
+            <h3>CityHub</h3>
+            <p class="w3-opacity">Central Logistics Hub</p>
+            <p>Offers last-mile logistics using emission-free vehicles and urban distribution centers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drukkerij De Bij -->
+    <div class="swiper-slide">
+      <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+        <img src="../img/drukkerij.png" alt="Drukkerij De Bij" style="height: 150px; object-fit: contain; margin-top: 30px;">
+        <div class="w3-container" style="text-align: center;">
+          <h3>Drukkerij De Bij</h3>
+          <p class="w3-opacity">Sustainable Printing</p>
+          <p>Eco-friendly printing services using recycled materials and sustainable inks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dutch Band -->
+    <div class="swiper-slide">
+      <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+        <img src="../img/dutchband.png" alt="Dutch Band" style="height: 150px; object-fit: contain; margin-top: 30px;">
+        <div class="w3-container" style="text-align: center;">
+          <h3>Dutch Band</h3>
+          <p class="w3-opacity">Event Access Tech</p>
+          <p>Provides reusable wristbands and sustainable access tech for festivals and events.</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Gemeente -->
+      <div class="swiper-slide">
+        <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+          <img src="../img/gemeente.png" alt="Gemeente" style="height: 150px; object-fit: contain; margin-top: 30px;">
+          <div class="w3-container" style="text-align: center;">
+            <h3>Municipality of Amsterdam</h3>
+            <p class="w3-opacity">City Municipality</p>
+            <p>Supports green initiatives and promotes a circular, climate-resilient city.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milieu Service Nederland -->
+    <div class="swiper-slide">
+      <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+        <img src="../img/milieu.png" alt="Milieu Service Nederland" style="height: 150px; object-fit: contain; margin-top: 30px;">
+        <div class="w3-container" style="text-align: center;">
+          <h3>Milieu Service Nederland</h3>
+          <p class="w3-opacity">Waste Management</p>
+          <p>Offers circular waste solutions and recycling programs for businesses.</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Pantar Amsterdam -->
+  <div class="swiper-slide">
+    <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+      <img src="../img/pantar.png" alt="Pantar Amsterdam" style="height: 150px; object-fit: contain; margin-top: 30px;">
+      <div class="w3-container" style="text-align: center;">
+        <h3>Pantar Amsterdam</h3>
+        <p class="w3-opacity">Social Employment</p>
+        <p>Provides work opportunities and training for people with a distance to the labor market.</p>
+      </div>
+    </div>
+  </div>
+
+      <!-- Servicepunt Werkgevers -->
+  <div class="swiper-slide">
+    <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+      <img src="../img/werkgevers.png" alt="Servicepunt Werkgevers" style="height: 150px; object-fit: contain; margin-top: 30px;">
+      <div class="w3-container" style="text-align: center;">
+        <h3>Servicepunt Werkgevers</h3>
+        <p class="w3-opacity">Employer Services</p>
+        <p>Supports businesses in finding and hiring inclusive, sustainable workforce solutions.</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- NS -->
+      <div class="swiper-slide">
+        <div class="w3-card" style="height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px;">
+          <img src="../img/ns.png" alt="NS" style="height: 150px; object-fit: contain; margin-top: 30px;">
+          <div class="w3-container" style="text-align: center;">
+            <h3>Nederlandse Spoorwegen (NS)</h3>
+            <p class="w3-opacity">Dutch Railways</p>
+            <p>Operates national trains on 100% wind energy, driving green mobility across the Netherlands.</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+    <!-- Optional navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Optional pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+ 
+
+<!-- Footer -->
+<footer class="w3-black w3-padding-24 w3-opacity-min" style="font-size: 14px; line-height: 1.4;">
+  <div class="w3-container w3-content" style="max-width: 900px;">
+
+    <!-- Navigation Links -->
+    <div class="w3-row" style="margin-bottom: 20px; font-size: 13px;">
+
+      <div class="w3-third" style="text-align: left;">
+        <strong style="display: block; margin-bottom: 8px; color: #ccc;">Explore</strong>
+        <a href="../pages/members.html" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px; margin-right: 6px;">Members</a>
+        <a href="../pages/projects.html" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px; margin-right: 6px;">Projects</a>
+        <a href="../pages/events.html" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px;">Events</a>
+      </div>
+
+      <div class="w3-third" style="text-align: center; border-left: 1px solid #444; border-right: 1px solid #444; padding: 0 15px;">
+        <strong style="display: block; margin-bottom: 8px; color: #ccc;">Follow Us</strong>
+        <a href="https://www.linkedin.com/company/green-business-club-amsterdam-sloterdijken" target="_blank" class="w3-button w3-black w3-hover-grey w3-small" style="padding:6px 10px;">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+      
+
+      <div class="w3-third" style="text-align: right;">
+        <a href="#top" class="w3-button w3-light-grey w3-small" style="padding:6px 10px;">
+          <i class="fa fa-arrow-up w3-margin-right"></i>Top
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="w3-small" style="color: #aaa; margin-top: 0; border-top: 1px solid #444; padding-top: 12px;">
+      © 2025 Green Business Club Sloterdijk. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
